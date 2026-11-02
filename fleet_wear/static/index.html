@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Robot fleet: joint movement and wear</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js" charset="utf-8"></script>
+</head>
+<body>
+  <header>
+    <h1>Robot fleet: joint movement and wear</h1>
+    <span id="status" class="muted"></span>
+    <button id="sync" type="button">Read new data</button>
+  </header>
+  <form id="filters" class="filters" onsubmit="return false">
+    <label>Measure <select id="metric"></select></label>
+    <p id="explain" class="explain"></p>
+  </form>
+  <div id="notice"></div>
+  <section id="tiles" class="tiles"></section>
+  <main id="main" class="muted">Loading.</main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
